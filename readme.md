@@ -11,6 +11,10 @@ Made completely with Copilot Edit - Agent mode using Claude 3.5
 - [Controls](#controls)
 - [Credits](#credits)
 
+## Screenshot
+
+<img width="505" alt="image" src="https://github.com/user-attachments/assets/838e96fe-615c-4f51-9a37-c5f7810c29c1" />
+
 ## Features
 
 - Classic Tetris gameplay
