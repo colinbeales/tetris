@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.game-title {
+    font-size: 3rem;
+    color: #00f;
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+    margin: 20px 0;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game-area {
+    display: flex;
+    gap: 20px;
+}
+
+.game-board {
+    width: 200px;
+    height: 400px;
+    background-color: #111;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 10px #0f0;
+    display: grid;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.next-piece-container {
+    background-color: #111;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 10px #0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.next-piece-container h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
+}
+
+#next-piece-preview {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(4, 25px) / repeat(4, 25px);
+}
+
+.score-board {
+    background-color: #111;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 10px #0f0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    background-color: #0f0;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #000;
+    color: #0f0;
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.control-button {
+    padding: 10px 20px;
+    background-color: #0f0;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.control-button:hover {
+    background-color: #000;
+    color: #0f0;
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        border: 1px solid #0f0;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+        border: 1px solid #0f0;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+        border: 1px solid #0f0;
+    }
+}
+
+.exploding-line {
+    animation: explode 0.5s ease-out forwards;
+    border: 1px solid #0f0 !important;
+}
+
+.exploding-line-multi {
+    animation: explode 0.8s ease-out forwards;
+    border: 1px solid #0f0 !important;
+    box-shadow: 0 0 20px #0f0, 0 0 40px #0f0 !important;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin's Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="game-title">Colin's Tetris</h1>
+    <div class="game-container">
+        <div class="game-area">
+            <div class="game-board" id="game-board"></div>
+            <div class="side-panel">
+                <div class="next-piece-container">
+                    <h2>Next Piece</h2>
+                    <div id="next-piece-preview"></div>
+                </div>
+                <div class="score-board">
+                    <div>Score: <span id="current-score">0</span></div>
+                    <div>High Score: <span id="high-score">0</span></div>
+                </div>
+                <button id="music-toggle" class="control-button">🔊 Music On</button>
+                <button id="restart-button" class="control-button" onclick="startGame()">Start</button>
+            </div>
+        </div>
+    </div>
+    <audio id="tetris-theme" loop>
+        <source src="https://ia802905.us.archive.org/11/items/TetrisThemeMusic/Tetris.ogg" type="audio/ogg">
+    </audio>
+    <audio id="line-clear-1" preload="auto">
+        <source src="https://www.myinstants.com/media/sounds/vine-boom.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="line-clear-2" preload="auto">
+        <source src="https://www.myinstants.com/media/sounds/vine-boom.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="line-clear-3" preload="auto">
+        <source src="https://www.myinstants.com/media/sounds/vine-boom.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="line-clear-4" preload="auto">
+        <source src="https://www.myinstants.com/media/sounds/vine-boom.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
