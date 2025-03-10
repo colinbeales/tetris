@@ -1,4 +1,4 @@
-# Colin's Tetris
+# Colins Tetris
 
 Welcome to Colin's Tetris! This is a web-based implementation of the classic Tetris game.
 Made completely with Copilot Edit - Agent mode using Claude 3.5
@@ -57,4 +57,4 @@ To run this project locally, follow these steps:
 - Background music: [Tetris Theme Music](https://ia802905.us.archive.org/11/items/TetrisThemeMusic/Tetris.ogg)
 - Sound effects: [Vine Boom](https://www.myinstants.com/media/sounds/vine-boom.mp3)
 
-Enjoy playing Colin's Tetris!
+Enjoy playing Colins Tetris!
